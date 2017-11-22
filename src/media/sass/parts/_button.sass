@@ -1,0 +1,50 @@
+.button
+	@extend .animated
+	$height: 42px
+	position: relative
+	height: $height
+	border-radius: $height / 2
+	background-color: $color-main
+	color: #fff
+	padding: 0 24px
+	font-size: $default-font-size
+	cursor: pointer
+	box-sizing: border-box
+	&:hover
+		background-color: $color-dark
+	&._transparent
+		background-color: transparent
+		border: 1px solid $color-pale-grey
+		color: $color-dark
+		&:hover
+			background-color: $color-dark
+			color: #fff
+	&._icon
+		padding-left: 48px
+		&:before
+			content: ""
+			position: absolute
+			left: 21px
+	&._icon-apple
+		&:before
+			top: 10px
+			background-image: inline("../img/icon-apple.svg")
+			width: 16px
+			height: 20px
+			background-size: cover
+	&._icon-play
+		padding: 0 46px 0 65px
+		&:before
+			@extend .animated
+			width: 0
+			height: 0
+			left: 42px
+			top: 50%
+			margin-top: -5px
+			border-left: 10px solid $color-dark
+			border-top: 5px solid transparent
+			border-bottom: 5px solid transparent
+		&:hover
+			&:before
+				border-left-color: #fff
+				transition: none

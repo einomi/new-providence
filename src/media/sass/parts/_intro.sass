@@ -1,0 +1,58 @@
+.intro
+	height: 100vh
+	min-height: 1000px
+	background-image: url("../img/intro-bg.jpg")
+	background-size: cover
+	&__content
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		padding-bottom: vw(510px)
+		text-align: center
+	&__title
+		margin-bottom: em(28px, $main-title-font-size)
+		font-size: vw($main-title-font-size)
+	&__text
+		max-width: em(772px, $text-font-size)
+		margin-right: auto
+		margin-left: auto
+		margin-bottom: em(50px, $text-font-size)
+		font-size: vw($text-font-size)
+	&__phone
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		background-image: url("../img/phone.png")
+		width: vw(369px)
+		height: vw(455px)
+		background-size: cover
+		+retina
+			background-image: url("../img/phone@2x.png")
+	+max-screen(1200px)
+		&__content
+			padding-bottom: reset-min(400px, 1200px)
+		&__title
+			font-size: reset-min($main-title-font-size, 1200px)
+		&__text
+			font-size: reset-min($text-font-size, 1200px)
+	+min-screen($mockup-width)
+		&__content
+			padding-bottom: 510px
+		&__title
+			font-size: $main-title-font-size
+		&__text
+			font-size: $text-font-size
+		&__phone
+			min-width: 369px
+			max-height: 455px
+	+max-screen-height(900px)
+		min-height: 700px
+		&__content
+			padding-bottom: vw(400px)
+		&__text
+			margin-bottom: em(28px, $text-font-size)
+		&__phone
+			width: vw(300px)
+			height: vw(371px)
