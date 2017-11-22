@@ -1,0 +1,18 @@
+<section class="section-description">
+	<div class="container">
+		<div class="row">
+			<img class="section-description__image" src="/media/img/phone2@2x.jpg" width="1009" height="879"/>
+			<div class="section-description__content col-lg-5 offset-lg-7">
+				<div class="section-description__title title">Your day <br>is protected</div>
+				<div class="section-description__text-content">
+					<div class="section-description__text text">There have not been any since we have lived here, said my mother.</div>
+					<div class="section-description__text text">We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</div>
+				</div>
+				<div class="section-description__buttons">
+					<button class="section-description__button button _arrow" role="button">Try to hack us</button>
+					<button class="section-description__button button _transparent" role="button">Learn more</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

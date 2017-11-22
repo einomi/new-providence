@@ -1,0 +1,21 @@
+.feature
+	&__inner
+		$indent-side: 34px
+		position: relative
+		padding-top: 94px
+		border-left: $indent-side solid transparent
+		border-right: $indent-side solid transparent
+		box-sizing: border-box
+	&__icon
+		position: absolute
+		top: 0
+		left: 0
+	&__title
+		$font-size: 26px
+		font-weight: 500
+		font-size: $font-size
+		margin-bottom: em(32px, $font-size)
+	&__text
+		margin-bottom: em(24px, $default-font-size)
+		&:last-child
+			margin-bottom: 0

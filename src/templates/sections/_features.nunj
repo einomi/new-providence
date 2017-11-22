@@ -1,0 +1,28 @@
+<section class="section-features">
+	<div class="section-features__container container">
+		<div class="section-features__cols">
+			<div class="row">
+				<div class="section-features__item feature col-lg-6">
+					<div class="feature__inner">
+						<div class="feature__icon icon-lock" aria-label="lock icon"></div>
+						<div class="feature__title">Real-time all the time</div>
+						<div class="feature__content">
+							<div class="feature__text text">thus much i thought proper to tell you in relation to yourself, and to the trust i reposed in you.</div>
+							<div class="feature__text text">just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-features__item feature col-lg-6">
+					<div class="feature__inner">
+						<div class="feature__icon icon-clock" aria-label="lock icon"></div>
+						<div class="feature__title">Adopt without any obstacles</div>
+						<div class="feature__content">
+							<div class="feature__text text">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</div>
+							<div class="feature__text text">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

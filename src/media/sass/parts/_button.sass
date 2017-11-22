@@ -19,6 +19,7 @@
 		&:hover
 			background-color: $color-dark
 			color: #fff
+			border-color: $color-dark
 	&._icon
 		padding-left: 48px
 		&:before
@@ -48,3 +49,20 @@
 			&:before
 				border-left-color: #fff
 				transition: none
+	&._arrow
+		padding-right: 76px
+		&:hover
+			&:after
+				transform: translateX(2px)
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			top: 50%
+			margin-top: -5px
+			right: 19px
+			background-image: inline("../img/arrow-right.svg")
+			width: 13px
+			height: 11px
+			background-size: cover
+			transition: transform $default-transition-duration $default-transition-function

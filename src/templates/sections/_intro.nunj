@@ -1,0 +1,8 @@
+<section class="section-intro">
+	<div class="section-intro__content">
+		<h1 class="section-intro__title main-title">What happens tomorrow?</h1>
+		<div class="section-intro__text text">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.</div>
+		<button class="section-intro__button button _transparent _icon _icon-play" role="button">Watch Video</button>
+	</div>
+	<div class="section-intro__phone"></div>
+</section>

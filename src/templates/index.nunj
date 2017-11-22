@@ -4,12 +4,8 @@
 
 {% block content %}
 	{% include './parts/_header.nunj' %}
-	<div class="intro">
-		<div class="intro__content">
-			<h1 class="intro__title main-title">What happens tomorrow?</h1>
-			<div class="intro__text text">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.</div>
-			<button class="intro__button button _transparent _icon _icon-play" role="button">Watch Video</button>
-		</div>
-		<div class="intro__phone"></div>
-	</div>
+	{% include './sections/_intro.nunj' %}
+	{% include './sections/_features.nunj' %}
+	{% include './sections/_description.nunj' %}
+	{% include './sections/_interface.nunj' %}
 {% endblock content %}
