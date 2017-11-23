@@ -1,0 +1,57 @@
+.screens
+	position: relative
+	text-align: center
+	font-size: 0
+	&__name
+		margin-bottom: 18px
+	&__left-area, &__right-area
+		position: absolute
+		top: 104px
+	&__left-area
+		left: -300px
+	&__right-area
+		right: -300px
+	&__item
+		position: relative
+		display: inline-block
+		width: 320px
+		height: 568px
+		background-size: cover
+		box-shadow: 10px 32px 66px rgba(#5c5f65, 0.28)
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			box-shadow: 0 10px 24px rgba(#3d3d3e, 0.15)
+		&:first-child
+			margin-right: 30px
+		&._1
+			background-image: url("../img/screens/1.jpg")
+			+retina
+				background-image: url("../img/screens/1@2x.jpg")
+		&._2
+			background-image: url("../img/screens/2.jpg")
+			+retina
+				background-image: url("../img/screens/2@2x.jpg")
+		&._3
+			background-image: url("../img/screens/3.jpg")
+			+retina
+				background-image: url("../img/screens/3@2x.jpg")
+		&._4
+			background-image: url("../img/screens/4.jpg")
+			+retina
+				background-image: url("../img/screens/4@2x.jpg")
+	&__main
+		position: relative
+		display: inline-block
+		width: 485px
+		height: 871px
+		background-size: cover
+		background-image: url("../img/screens/main.png")
+		z-index: 1
+		+retina
+			background-image: url("../img/screens/main@2x.png")

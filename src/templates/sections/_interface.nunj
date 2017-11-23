@@ -1,4 +1,25 @@
 <section class="section-interface">
-	<h2 class="section-interface__title title _line-bottom">Beautiful Interface</h2>
-
+	<div class="container">
+        <h2 class="section-interface__title title _line-bottom">Beautiful Interface</h2>
+        <div class="section-interface__screens screens">
+            <div class="screens__name title-tiny">Landing Screen</div>
+            <div class="screens__left-area">
+                <div class="screens__item _1"></div>
+                <div class="screens__item _2"></div>
+            </div>
+            <div class="screens__main"></div>
+            <div class="screens__right-area">
+                <div class="screens__item _3"></div>
+                <div class="screens__item _4"></div>
+            </div>
+        </div>
+		<form class="section-interface__form form-invite form" method="POST">
+			<div class="form-invite__title-tiny title-tiny">NewProvidence</div>
+			<div class="form-invite__title title">Get it to your smartphone </div>
+			<div class="form-invite__input-buttoned input-buttoned">
+				<input type="text" class="input-buttoned__input form-invite__input i-text" placeholder="Your Email">
+				<button class="input-buttoned__button button _arrow _arrow-alt-padding _green" role="button">Send Invite</button>
+			</div>
+		</form>
+	</div>
 </section>
