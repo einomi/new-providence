@@ -1,0 +1,79 @@
+.slider
+	$photo-margin-side: 57px
+	$content-width: 570px
+	text-align: center
+	&__photos
+		font-size: 0
+		margin: 0 #{-$photo-margin-side} 70px
+	&__photo
+		display: inline-block
+		margin: 0 $photo-margin-side
+		opacity: 0.2
+		height: 144px
+		width: 144px
+		transform: scale(0.85)
+		will-change: transform, opacity
+		border-radius: 50%
+		cursor: pointer
+		transition: opacity 0.4s $default-transition-function
+		&:hover
+			opacity: 0.6
+		&._active
+			opacity: 1
+			transform: scale(1)
+	&__content
+		white-space: nowrap
+		height: 300px
+		&-items
+			position: absolute
+			left: 50%
+			margin-left: -$content-width*3/2 + $content-width
+		&-item
+			display: inline-block
+			visibility: hidden
+			opacity: 0
+			width: $content-width
+			white-space: normal
+			&._active
+				opacity: 1
+				visibility: visible
+	&__control
+		position: absolute
+		width: 22px
+		height: 41px
+		opacity: 0.2
+		background-size: cover
+		top: 60px
+		background-image: url("../img/control-right.svg")
+		cursor: pointer
+		transition: opacity $default-transition-duration $default-transition-function
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: -15px
+			right: -15px
+			bottom: -15px
+			left: -15px
+		&:hover
+			opacity: 0.4
+			transition: none
+		&:active
+			opacity: 0.6
+		&._prev
+			left: 35px
+			transform: rotate(180deg)
+		&._next
+			right: 35px
+
+.slider-item
+	&__title
+		$font-size: 32px
+		font-size: $font-size
+		margin-bottom: em($font-size, 32px)
+	&__text
+		margin-bottom: em(24px, $default-font-size)
+	&__rating
+		margin-bottom: 62px
+	&__author
+		color: $color-dark

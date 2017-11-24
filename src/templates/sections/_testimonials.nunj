@@ -1,0 +1,39 @@
+{% from '../macro/_rating.nunj' import rating %}
+
+<section class="section-testimonials">
+    <div class="section-testimonials__slider slider">
+        <div class="container">
+            <div class="slider__photos">
+                <img class="slider__photo" src="/media/img/slider/photo1@2x.jpg"/>
+                <img class="slider__photo _active" src="/media/img/slider/photo2@2x.jpg"/>
+                <img class="slider__photo" src="/media/img/slider/photo3@2x.jpg"/>
+            </div>
+            <div class="slider__content">
+                <div class="slider__content-items">
+                    <div class="slider__content-item slider-item _active">
+                        <h3 class="slider-item__title">New Providence ist the great UI kit</h3>
+                        <p class="slider-item__text text">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
+                        {{ rating('slider-item__rating', 4) }}
+                        <div class="slider-item__author title-tiny">Cameron Dowman</div>
+                    </div>
+                    <div class="slider__content-item slider-item">
+                        <h3 class="slider-item__title">New Providence ist the great UI kit</h3>
+                        <p class="slider-item__text text">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
+                        {{ rating('slider-item__rating', 5) }}
+                        <div class="slider-item__author title-tiny">Cameron Dowman</div>
+                    </div>
+                    <div class="slider__content-item slider-item">
+                        <h3 class="slider-item__title">New Providence ist the great UI kit</h3>
+                        <p class="slider-item__text text">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
+                        {{ rating('slider-item__rating', 2) }}
+                        <div class="slider-item__author title-tiny">Cameron Dowman</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__controls">
+                <div class="slider__control _prev"></div>
+                <div class="slider__control _next"></div>
+            </div>
+        </div>
+	</div>
+</section>

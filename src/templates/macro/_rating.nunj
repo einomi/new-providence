@@ -1,0 +1,7 @@
+{% macro rating(className, value) %}
+	<div class="slider-item__rating rating">
+		{% for i in range(5) %}
+			<div class="rating__item{% if i <= value - 1 %} _active{% endif %}"></div>
+		{% endfor %}
+	</div>
+{% endmacro %}
