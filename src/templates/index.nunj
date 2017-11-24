@@ -9,4 +9,5 @@
 	{% include './sections/_description.nunj' %}
 	{% include './sections/_interface.nunj' %}
 	{% include './sections/_testimonials.nunj' %}
+	{% include './parts/_footer.nunj' %}
 {% endblock content %}

@@ -1,0 +1,36 @@
+<footer class="site-footer">
+	<div class="container">
+        <div class="site-footer__about footer-about">
+			<div class="site-footer__logo logo" aria-label="New Providence Logo"></div>
+			<p class="site-footer__text">It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
+			<div class="site-footer__social social">
+				<a href="#" target="_blank" class="social__item"><svg class="social__item-icon _twitter"><use xlink:href="#icon-twitter"></use></svg></a>
+				<a href="#" target="_blank" class="social__item"><svg class="social__item-icon _facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+				<a href="#" target="_blank" class="social__item"><svg class="social__item-icon _linkedin"><use xlink:href="#icon-linkedin"></use></svg></a>
+			</div>
+		</div>
+		<div class="site-footer__cols footer-cols">
+			<div class="footer-cols__item">
+				<div class="footer-cols__title title-tiny">Learn More</div>
+				<div class="footer-cols__text">How it works?</div>
+				<div class="footer-cols__text">Meeting tools</div>
+				<div class="footer-cols__text">Live striming</div>
+				<div class="footer-cols__text">Contat method</div>
+			</div>
+			<div class="footer-cols__item">
+				<div class="footer-cols__title title-tiny">About Us</div>
+				<div class="footer-cols__text">About us</div>
+				<div class="footer-cols__text">Features</div>
+				<div class="footer-cols__text">Privacy police</div>
+				<div class="footer-cols__text">Terms & Conditions</div>
+			</div>
+			<div class="footer-cols__item">
+				<div class="footer-cols__title title-tiny">Support</div>
+				<div class="footer-cols__text">F.A.Q.</div>
+				<div class="footer-cols__text">Contact us</div>
+				<div class="footer-cols__text">Live chat</div>
+				<div class="footer-cols__text">Phone call</div>
+			</div>
+		</div>
+	</div>
+</footer>

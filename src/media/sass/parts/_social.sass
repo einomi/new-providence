@@ -1,0 +1,35 @@
+.social
+	font-size: 0
+	&__item
+		position: relative
+		display: inline-block
+		margin-right: 28px
+		vertical-align: middle
+		cursor: pointer
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: -10px
+			right: -10px
+			bottom: -10px
+			left: -10px
+		&:hover
+			.social__item-icon
+				opacity: 1
+				transition: none
+		&:last-child
+			margin-right: 0
+		&-icon
+			fill: $color-dark
+			opacity: 0.3
+			transition: opacity $default-transition-duration $default-transition-function
+			&._twitter
+				width: 17px
+				height: 14px
+			&._facebook
+				width: 9px
+				height: 18px
+			&._linkedin
+				width: 16px
+				height: 15px

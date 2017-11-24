@@ -1,8 +1,8 @@
 {% from '../macro/_rating.nunj' import rating %}
 
 <section class="section-testimonials">
-    <div class="section-testimonials__slider slider">
-        <div class="container">
+    <div class="section-testimonials__container container">
+        <div class="section-testimonials__slider slider">
             <div class="slider__photos">
                 <img class="slider__photo" src="/media/img/slider/photo1@2x.jpg"/>
                 <img class="slider__photo _active" src="/media/img/slider/photo2@2x.jpg"/>
