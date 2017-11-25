@@ -1,5 +1,5 @@
 {
-	"menuItems": [
+	"menuItems1": [
 		{
 			"name": "Tour",
 			"path": "#"
@@ -10,6 +10,16 @@
 		},
 		{
 			"name": "Pricing",
+			"path": "#"
+		}
+	],
+	"menuItems2": [
+		{
+			"name": "Help",
+			"path": "#"
+		},
+		{
+			"name": "Contacts",
 			"path": "#"
 		}
 	]

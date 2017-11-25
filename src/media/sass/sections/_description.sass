@@ -1,18 +1,31 @@
 .section-description
-	padding-top: 113px
-	padding-bottom: 327px
+	padding-top: percents(113px, $mockup-width)
+	padding-bottom: percents(327px, $mockup-width)
+	overflow: hidden
 	&__image
+		$width: 1009px
 		position: absolute
-		left: -340px
+		right: 45%
+		width: $width
+		height: auto
 	&__content
 		position: relative
-		padding-top: 155px
+		padding-top: 11.5%
 	&__title
-		margin-bottom: em(58px, $title-font-size)
+		margin-bottom: em(65px, $title-font-size)
+		line-height: 1.25
 	&__text-content
-		margin-bottom: em(70px, $default-font-size)
+		margin-bottom: em(71px, $default-font-size)
 	&__text
-		margin-bottom: em(20px, $default-font-size)
+		margin-bottom: em(23px, $default-font-size)
+	&__buttons
+		white-space: nowrap
 	&__button
-		float: left
-		margin-right: 20px
+		display: inline-block
+		margin-right: 17px
+		&:last-child
+			margin-right: 0
+	+max-screen($breakpoint-lg)
+		padding-top: vw(150px)
+		&__title
+			font-size: 52px

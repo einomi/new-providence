@@ -1,27 +1,36 @@
 .site-footer
 	@extend .clearfix
-	padding-top: 102px
-	padding-bottom: 108px
+	padding-top: 108px
+	padding-bottom: 88px
 	&__about
 		float: left
 		width: 270px
 	&__logo
-		margin-bottom: 26px
+		margin-bottom: 30px
 	&__text
 		font-size: 14px
-		line-height: 1.8
+		line-height: 1.72
 		color: $color-grey
 		margin-bottom: 24px
 	&__cols
 		float: right
+	+max-screen($breakpoint-lg)
+		&__about
+			width: 190px
 	
 .footer-cols
 	&__item
 		display: inline-block
-		margin-right: 97px
+		margin-right: 89px
+		&:nth-child(2)
+			margin-right: 60px
 	&__title
-		margin-bottom: 14px
+		margin-bottom: 20px
 		color: $color-dark
 	&__text
-		margin-bottom: 14px
+		margin-bottom: 18px
+	&__link
 		color: $color-grey
+	+max-screen($breakpoint-lg)
+		&__item
+			margin-right: 45px

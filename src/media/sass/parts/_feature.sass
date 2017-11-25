@@ -2,9 +2,9 @@
 	&__inner
 		$indent-side: 34px
 		position: relative
-		padding-top: 94px
-		border-left: $indent-side solid transparent
-		border-right: $indent-side solid transparent
+		padding-top: 92px
+		border-left: vw($indent-side) solid transparent
+		border-right: vw($indent-side) solid transparent
 		box-sizing: border-box
 	&__icon
 		position: absolute
@@ -14,8 +14,10 @@
 		$font-size: 26px
 		font-weight: 500
 		font-size: $font-size
-		margin-bottom: em(32px, $font-size)
+		margin-bottom: em(37px, $font-size)
 	&__text
-		margin-bottom: em(24px, $default-font-size)
+		$font-size: 18px
+		font-size: $font-size
+		margin-bottom: em(28px, $font-size)
 		&:last-child
 			margin-bottom: 0

@@ -4,4 +4,9 @@
 	background-color: #f5f5f8
 	&__title
 		text-align: center
-		margin-bottom: em(38px, $title-font-size)
+		margin-bottom: em(42px, $title-font-size)
+	&__screens
+		margin-bottom: 94px
+	+max-screen($breakpoint-lg)
+		&__title
+			margin-bottom: 46px

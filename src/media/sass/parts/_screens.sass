@@ -3,14 +3,17 @@
 	text-align: center
 	font-size: 0
 	&__name
-		margin-bottom: 18px
+		margin-bottom: 27px
+	&__items
+		position: relative
 	&__left-area, &__right-area
 		position: absolute
 		top: 104px
+		white-space: nowrap
 	&__left-area
-		left: -300px
+		right: calc(50% + 210px)
 	&__right-area
-		right: -300px
+		left: calc(50% + 210px)
 	&__item
 		position: relative
 		display: inline-block
@@ -55,3 +58,6 @@
 		z-index: 1
 		+retina
 			background-image: url("../img/screens/main@2x.png")
+	+max-screen($breakpoint-lg)
+		&__name
+			margin-bottom: 17px

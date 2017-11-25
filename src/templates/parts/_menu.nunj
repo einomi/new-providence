@@ -1,6 +1,6 @@
-{% macro menu(className) %}
+{% macro menu(className, items) %}
 	<nav class="{{ className }} menu" style="text-align: center;" role="navigation">
-		{% for item in menuItems %}
+		{% for item in items %}
 			<a href="{{ item.path }}" class="menu__item link">{{ item.name }}</a>
 		{% endfor %}
 	</nav>

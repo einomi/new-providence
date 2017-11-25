@@ -12,24 +12,24 @@
 		<div class="site-footer__cols footer-cols">
 			<div class="footer-cols__item">
 				<div class="footer-cols__title title-tiny">Learn More</div>
-				<div class="footer-cols__text">How it works?</div>
-				<div class="footer-cols__text">Meeting tools</div>
-				<div class="footer-cols__text">Live striming</div>
-				<div class="footer-cols__text">Contat method</div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">How it works?</a></div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">Meeting tools</a></div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">Live striming</a></div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">Contat method</a></div>
 			</div>
 			<div class="footer-cols__item">
 				<div class="footer-cols__title title-tiny">About Us</div>
-				<div class="footer-cols__text">About us</div>
-				<div class="footer-cols__text">Features</div>
-				<div class="footer-cols__text">Privacy police</div>
-				<div class="footer-cols__text">Terms & Conditions</div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">About us</a></div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">Features</a></div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">Privacy police</a></div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">Terms & Conditions</a></div>
 			</div>
 			<div class="footer-cols__item">
 				<div class="footer-cols__title title-tiny">Support</div>
-				<div class="footer-cols__text">F.A.Q.</div>
-				<div class="footer-cols__text">Contact us</div>
-				<div class="footer-cols__text">Live chat</div>
-				<div class="footer-cols__text">Phone call</div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">F.A.Q.</a></div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">Contact us</a></div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">Live chat</a></div>
+				<div class="footer-cols__text"><a href="#" class="footer-cols__link link">Phone call</a></div>
 			</div>
 		</div>
 	</div>

@@ -2,12 +2,11 @@
 	<div class="site-header__container container">
         <div class="site-header__menu-area">
             <button class="site-header__burger burger" area-label="Menu button"></button>
-            {{ menu('site-header__menu') }}
+            {{ menu('site-header__menu', menuItems1) }}
         </div>
         <div class="site-header__logo logo" data-role="brand" aria-label="New Providence Logo"></div>
         <div class="site-header__complementary-area">
-            <a href="#" class="site-header__link link">Help</a>
-            <a href="#" class="site-header__link link">Contacts</a>
+			{{ menu('site-header__menu _complementary', menuItems2)}}
             <button class="button _icon _icon-apple" role="button"><span class="button__text">Get App</span></button>
         </div>
 	</div>
