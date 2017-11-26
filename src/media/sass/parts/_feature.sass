@@ -21,3 +21,6 @@
 		margin-bottom: em(28px, $font-size)
 		&:last-child
 			margin-bottom: 0
+	+max-screen($breakpoint-md)
+		&__inner
+			+responsive-property(padding-top, 90px)

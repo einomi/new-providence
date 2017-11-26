@@ -7,6 +7,7 @@
 		position: absolute
 		right: 45%
 		width: $width
+		max-width: $width
 		height: auto
 	&__content
 		position: relative
@@ -18,6 +19,8 @@
 		margin-bottom: em(71px, $default-font-size)
 	&__text
 		margin-bottom: em(23px, $default-font-size)
+		&:last-child
+			margin-bottom: 0
 	&__buttons
 		white-space: nowrap
 	&__button
@@ -29,3 +32,30 @@
 		padding-top: vw(150px)
 		&__title
 			font-size: 52px
+	+max-screen($breakpoint-md)
+		+responsive-property(padding-top, 105px)
+		+responsive-property(padding-bottom, 40px)
+		&__content
+			padding-top: 0
+			+responsive-property(margin-bottom, 75px)
+		&__title
+			+responsive-property(margin-bottom, 63px)
+			+responsive-property(font-size, 52px)
+			line-height: 1.05
+		&__text-content
+			+responsive-property(margin-bottom, 64px)
+		&__text
+			+responsive-property(margin-bottom, 33px)
+		&__image
+			display: block
+			position: static
+			margin-right: auto
+			margin-left: auto
+			width: 100%
+	+max-screen(410px)
+		&__text-content
+			margin-bottom: 9vw
+		&__button
+			display: block
+			&:first-child
+				margin-bottom: 15px

@@ -13,4 +13,8 @@
 			margin-top: 38px
 	+max-screen($breakpoint-lg)
 		font-size: 52px
-		
+	+max-screen($breakpoint-md)
+		+responsive-property(font-size, 52px)
+		&._line-bottom
+			&:after
+				+responsive-property(margin-top, 40px)

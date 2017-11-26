@@ -2,7 +2,7 @@
 	<div class="section-features__container container">
 		<div class="section-features__cols">
 			<div class="row">
-				<div class="section-features__item feature col-lg-6">
+				<div class="section-features__item feature col-lg-6 col-sm-12">
 					<div class="feature__inner">
 						<div class="feature__icon icon-lock" aria-label="lock icon"></div>
 						<div class="feature__title">Real-time all the time</div>
@@ -12,7 +12,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="section-features__item feature col-lg-6">
+				<div class="section-features__item feature col-lg-6 col-sm-12">
 					<div class="feature__inner">
 						<div class="feature__icon icon-clock" aria-label="lock icon"></div>
 						<div class="feature__title">Adopt without any obstacles</div>

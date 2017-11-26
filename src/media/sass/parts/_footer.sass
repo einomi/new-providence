@@ -4,7 +4,7 @@
 	padding-bottom: 88px
 	&__about
 		float: left
-		width: 270px
+		max-width: 270px
 	&__logo
 		margin-bottom: 30px
 	&__text
@@ -16,8 +16,17 @@
 		float: right
 	+max-screen($breakpoint-lg)
 		&__about
-			width: 190px
-	
+			max-width: 190px
+	+max-screen($breakpoint-md)
+		padding-top: 50px
+		padding-bottom: 95px
+		&__about
+			max-width: 434px
+			float: none
+			margin-bottom: 70px
+		&__cols
+			float: none
+
 .footer-cols
 	&__item
 		display: inline-block
@@ -34,3 +43,11 @@
 	+max-screen($breakpoint-lg)
 		&__item
 			margin-right: 45px
+	+max-screen($breakpoint-md)
+		&__item
+			display: block
+			margin-bottom: 42px
+			&:last-child
+				margin-bottom: 0
+		&__title
+			font-weight: 500

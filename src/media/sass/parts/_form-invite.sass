@@ -6,7 +6,13 @@
 		margin-bottom: 47px
 	&__input-buttoned
 		display: inline-block
+		width: 100%
+		max-width: 502px
 	&__input
-		width: 502px
 		background-color: transparent
 		color: #000
+	+max-screen($breakpoint-md)
+		&__title-tiny
+			margin-bottom: 15px
+		&__title
+			+responsive-property(margin-bottom, 55px)

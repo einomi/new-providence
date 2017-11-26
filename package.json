@@ -1,7 +1,7 @@
 {
-  "name": "playrix-exam",
+  "name": "New Providence Demo",
   "version": "1.0.0",
-  "description": "Exam project for Playrix",
+  "description": "Makrup example",
   "scripts": {
     "start": "gulp",
     "build": "cross-env NODE_ENV=production gulp build",

@@ -1,13 +1,13 @@
-<header class="site-header">
+<div class="site-header">
 	<div class="site-header__container container">
         <div class="site-header__menu-area">
             <button class="site-header__burger burger" area-label="Menu button"></button>
-            {{ menu('site-header__menu', menuItems1) }}
+            {{ menu('site-header__menu hidden-sm', menuItems1) }}
         </div>
         <div class="site-header__logo logo" data-role="brand" aria-label="New Providence Logo"></div>
-        <div class="site-header__complementary-area">
+        <div class="site-header__complementary-area hidden-sm">
 			{{ menu('site-header__menu _complementary', menuItems2)}}
             <button class="button _icon _icon-apple" role="button"><span class="button__text">Get App</span></button>
         </div>
 	</div>
-</header>
+</div>

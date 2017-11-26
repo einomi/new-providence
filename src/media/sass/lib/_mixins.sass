@@ -211,3 +211,8 @@
 =phone
 	@at-root html._phone #{&}
 		@content
+
+=responsive-property($property, $value)
+	#{$property}: $value
+	+max-screen($breakpoint-sm)
+		#{$property}: vw($value, $breakpoint-sm)

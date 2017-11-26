@@ -1,3 +1,9 @@
+$screen-width: 320px
+$screen-height: 568px
+$main-screen-width: 485px
+$main-screen-height: 871px
+$multiplier-sm: 316px / $screen-height
+
 .screens
 	position: relative
 	text-align: center
@@ -17,8 +23,8 @@
 	&__item
 		position: relative
 		display: inline-block
-		width: 320px
-		height: 568px
+		width: $screen-width
+		height: $screen-height
 		background-size: cover
 		box-shadow: 10px 32px 66px rgba(#5c5f65, 0.28)
 		&:before
@@ -51,8 +57,8 @@
 	&__main
 		position: relative
 		display: inline-block
-		width: 485px
-		height: 871px
+		width: $main-screen-width
+		height: $main-screen-height
 		background-size: cover
 		background-image: url("../img/screens/main.png")
 		z-index: 1
@@ -61,3 +67,20 @@
 	+max-screen($breakpoint-lg)
 		&__name
 			margin-bottom: 17px
+	+max-screen($breakpoint-md)
+		&__name
+			+responsive-property(margin-bottom, 25px)
+		&__left-area, &__right-area
+			position: absolute
+			top: 104px * $multiplier-sm
+			white-space: nowrap
+		&__left-area
+			right: calc(50% + #{210px * $multiplier-sm})
+		&__right-area
+			left: calc(50% + #{210px * $multiplier-sm})
+		&__item
+			width: $screen-width * $multiplier-sm
+			height: $screen-height * $multiplier-sm
+		&__main
+			width: $main-screen-width * $multiplier-sm
+			height: $main-screen-height * $multiplier-sm

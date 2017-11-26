@@ -1,8 +1,7 @@
 <section class="section-description">
 	<div class="container">
 		<div class="row">
-			<img class="section-description__image" src="/media/img/phone2@2x.jpg"/>
-			<div class="section-description__content col-lg-5 offset-lg-7">
+			<div class="section-description__content col-lg-5 offset-lg-7 col-sm-12 offset-sm-0">
 				<div class="section-description__title title">Your day <br>is&nbsp;protected</div>
 				<div class="section-description__text-content">
 					<div class="section-description__text text">There have not been any since we&nbsp;have lived here, said my&nbsp;mother.</div>
@@ -13,6 +12,7 @@
 					<button class="section-description__button button _transparent _alt-padding" role="button">Learn more</button>
 				</div>
 			</div>
+			<img class="section-description__image" src="/media/img/phone2@2x.jpg"/>
 		</div>
 	</div>
 </section>

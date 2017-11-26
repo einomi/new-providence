@@ -9,6 +9,10 @@
 	width: 83%
 	padding: 0 $indent-col-lg
 	margin: 0 auto
+	box-sizing: border-box
+	+max-screen($breakpoint-sm)
+		width: 100%
+		padding: 0 $indent-col-xs
 
 .row
 	@extend .clearfix
@@ -85,10 +89,19 @@
 	&-xs
 		+max-screen($breakpoint-sm)
 			+offset-width($cols-total)
+			
+.hidden-sm
+	+max-screen($breakpoint-md)
+		display: none !important
+
+.visible-sm
+	display: none
+	+max-screen($breakpoint-md)
+		display: block
 
 .hidden-xs
 	+max-screen($breakpoint-sm)
-		display: none
+		display: none !important
 
 .visible-xs
 	display: none

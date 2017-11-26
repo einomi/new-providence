@@ -4,6 +4,8 @@
 	min-height: 550px
 	background: #f3f3f5 url("../img/intro-bg.jpg")
 	background-size: cover
+	&__container
+		height: 100%
 	&__content
 		position: absolute
 		left: 0
@@ -39,3 +41,41 @@
 			font-size: $main-title-font-size
 		&__text
 			font-size: $text-font-size
+	+max-screen($breakpoint-md)
+		min-height: 0
+		height: auto
+		+responsive-property(padding-top, 180px)
+		&__container
+			height: auto
+		&__content
+			position: static
+			padding-bottom: 0
+			padding-left: $indent-col-sm
+			padding-right: $indent-col-sm
+			box-sizing: border-box
+		&__title
+			+responsive-property(font-size, 62px)
+			margin-bottom: 10px
+		&__text
+			+responsive-property(font-size, 20px)
+			+responsive-property(margin-bottom, 55px)
+		&__button
+			+responsive-property(margin-bottom, 109px)
+			height: 50px
+			border-radius: 25px
+			padding-left: 75px
+			&:before
+				margin-top: -8px
+				left: 47px
+				border-left-width: 14px
+				border-top-width: 7.5px
+				border-bottom-width: 7.5px
+		&__phone
+			position: static
+			transform: none
+			margin-right: auto
+			margin-left: auto
+			+responsive-property(width, 277px)
+	+max-screen($breakpoint-sm)
+		&__title
+			+responsive-property(font-size, 58px)

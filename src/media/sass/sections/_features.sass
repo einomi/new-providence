@@ -3,3 +3,11 @@
 		padding-top: 122px
 		padding-bottom: 123px
 		border-bottom: 1px solid #f4f4f4
+	+max-screen($breakpoint-md)
+		&__container
+			+responsive-property(padding-top, 105px)
+			+responsive-property(padding-bottom, 105px)
+		&__item
+			+responsive-property(margin-bottom, 85px)
+			&:last-child
+				margin-bottom: 0
