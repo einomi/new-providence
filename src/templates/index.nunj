@@ -1,6 +1,6 @@
 {% extends "./ext/base.nunj" %}
 
-{% from "./parts/_menu.nunj" import menu %}
+{% from "./parts/_menu-popup.nunj" import menuPopup %}
 
 {% block content %}
 	{% include './parts/_header.nunj' %}
@@ -10,4 +10,6 @@
 	{% include './sections/_interface.nunj' %}
 	{% include './sections/_testimonials.nunj' %}
 	{% include './parts/_footer.nunj' %}
+	{{ menuPopup(menuComplementaryId, menuComplementaryItems) }}
+	{{ menuPopup(menuMobileId, menuMobileItems) }}
 {% endblock content %}

@@ -7,6 +7,7 @@
 	text-justify: distribute
 	font-size: 0
 	z-index: 10
+	transition: background $default-transition-duration $default-transition-function, box-shadow $default-transition-duration $default-transition-function, padding $default-transition-duration $default-transition-function
 	&__container
 		&:after
 			content: ""
@@ -32,3 +33,11 @@
 		transform: translateX(-50%)
 	+max-screen($breakpoint-lg)
 		padding: 42px 0
+	&._fixed
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		background-color: #fff
+		box-shadow: 0 3px 12px rgba($color-dark, 0.2)
+		padding: 32px 0

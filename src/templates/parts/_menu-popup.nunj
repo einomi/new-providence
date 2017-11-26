@@ -1,0 +1,11 @@
+{% macro menuPopup(id, items) %}
+	<div class="menu-popup" data-menu-popup="{{ id }}">
+		<div class="menu-popup__items">
+            {% for item in items %}
+                <div class="menu-popup__item"><a href="{{ item.path }}" class="menu-popup__item-link link">{{ item.name }}</a></div>
+            {% endfor %}
+		</div>
+		<button class="menu-popup__close close" role="button" data-menu-popup-closer></button>
+	</div>
+{% endmacro %}
+

@@ -22,5 +22,47 @@
 			"name": "Contacts",
 			"path": "#"
 		}
+	],
+	"menuComplementaryId": "menu-complementary",
+	"menuComplementaryItems": [
+		{
+			"name": "Our Videos",
+			"path": "#"
+		},
+		{
+			"name": "Blog",
+			"path": "#"
+		},
+		{
+			"name": "Behind The Scenes",
+			"path": "#"
+		},
+		{
+			"name": "FAQ",
+			"path": "#"
+		}
+	],
+	"menuMobileId": "menu-mobile",
+	"menuMobileItems": [
+		{
+			"name": "Tour",
+			"path": "#"
+		},
+		{
+			"name": "Features",
+			"path": "#"
+		},
+		{
+			"name": "Pricing",
+			"path": "#"
+		},
+		{
+			"name": "Help",
+			"path": "#"
+		},
+		{
+			"name": "Contacts",
+			"path": "#"
+		}
 	]
 }

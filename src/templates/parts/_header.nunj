@@ -1,7 +1,9 @@
+{% from "../parts/_menu.nunj" import menu %}
+
 <div class="site-header">
 	<div class="site-header__container container">
         <div class="site-header__menu-area">
-            <button class="site-header__burger burger" area-label="Menu button"></button>
+            <button class="site-header__burger burger" area-label="Menu button" data-burger></button>
             {{ menu('site-header__menu hidden-sm', menuItems1) }}
         </div>
         <div class="site-header__logo logo" data-role="brand" aria-label="New Providence Logo"></div>

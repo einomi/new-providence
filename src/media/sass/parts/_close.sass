@@ -1,0 +1,18 @@
+.close
+	@extend .animated
+	background-color: transparent
+	background-image: inline("../img/cross.svg")
+	width: 20px
+	height: 20px
+	background-size: cover
+	cursor: pointer
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		top: -20px
+		right: -20px
+		bottom: -20px
+		left: -20px
+	&:hover
+		opacity: 0.8

@@ -1,33 +1,19 @@
-var $ = global.$ = global.jQuery = require('./vendor/jquery-3.2.0.min');
-var TweenMax = global.TweenMax = require('./vendor/tweenmax.min');
-require('./vendor/jquery.gsap.min');
-require('./utils/jqExtensions');
+import SVGSprites from './helpers/SVGSprites'
+import Header from './modules/Header'
+import MenuPopups from './modules/MenuPopups'
+import dom from './utils/DOM'
 
-var App = global.App = new (function App() {
-    var self = this;
-
-    this.env = require('./utils/ENV');
-    this.dom = require('./utils/DOM');
-    this.utils = require('./utils/Utils');
-
-    this.classes = {
-        Callback: require('./classes/Callback'),
-    };
-
+const App = global.App = new (function App() {
     this.helpers = {
-        SVGSprites: require('./helpers/SVGSprites'),
+        SVGSprites,
     };
 
     this.modules = {
-
+		Header,
+	    MenuPopups,
     };
 
-    // Startup
-    $(function () {
-        // Remove _loading modificator
-        self.dom.$html.removeClass('_loading');
+    $(() => {
+        dom.$html.removeClass('_loading');
     });
 })();
-
-// App → ProjectName
-global.ProjectName = global.App, delete global.App;

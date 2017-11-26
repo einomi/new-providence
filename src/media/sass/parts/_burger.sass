@@ -1,4 +1,5 @@
 .burger
+	@extend .animated
 	$line-color: #1b1c1e
 	position: relative
 	width: 20px
@@ -6,6 +7,15 @@
 	border-bottom: 2px solid $line-color
 	height: 12px
 	box-sizing: border-box
+	cursor: pointer
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		top: -10px
+		right: -10px
+		bottom: -10px
+		left: -10px
 	&:before
 		content: ""
 		display: block
@@ -14,5 +24,7 @@
 		height: 2px
 		width: 100%
 		background-color: $line-color
+	&:hover
+		opacity: 0.6
 	+max-screen($breakpoint-lg)
 		width: 14px

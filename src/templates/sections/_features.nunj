@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="section-features__item feature col-lg-6 col-sm-12">
 					<div class="feature__inner">
-						<div class="feature__icon icon-lock" aria-label="lock icon"></div>
+						<div class="feature__icon icon-lock fa fa-lock" aria-label="lock icon"></div>
 						<div class="feature__title">Real-time all the time</div>
 						<div class="feature__content">
 							<div class="feature__text text">Thus much&nbsp;I thought proper to&nbsp;tell you in&nbsp;relation to&nbsp;yourself, and to&nbsp;the trust&nbsp;I reposed in&nbsp;you.</div>
@@ -14,7 +14,7 @@
 				</div>
 				<div class="section-features__item feature col-lg-6 col-sm-12">
 					<div class="feature__inner">
-						<div class="feature__icon icon-clock" aria-label="lock icon"></div>
+						<div class="feature__icon icon-clock fa fa-clock" aria-label="lock icon"></div>
 						<div class="feature__title">Adopt without any obstacles</div>
 						<div class="feature__content">
 							<div class="feature__text text">This sounded a&nbsp;very good reason, and Alice was quite pleased to&nbsp;know&nbsp;it. &rsquo;I&nbsp;never thought of&nbsp;that before!&rsquo; she said.</div>

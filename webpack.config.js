@@ -1,11 +1,39 @@
 'use strict';
-import { IS_PRODUCTION } from './config'
+import fs from 'fs'
 import webpack from 'webpack'
 import path from 'path'
+
+import { IS_PRODUCTION } from './config'
+
+const appDirectory = fs.realpathSync(process.cwd());
+const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
+const appNodeModules = resolveApp('node_modules');
 
 const PATHS = {
 	app: path.resolve(__dirname, 'src/media/js/')
 };
+
+let plugins = [
+	new webpack.ProvidePlugin({
+		$: 'jquery',
+		TweenMax: 'TweenMax',
+	})
+];
+
+if (IS_PRODUCTION) {
+    plugins.push(
+	    new webpack.optimize.UglifyJsPlugin({
+		    minimize: true,
+		    beautify: false,
+		    compress: true,
+		    comments: false,
+		    parallel: {
+			    cache: true,
+			    workers: 2
+		    }
+	    })
+    );
+}
 
 const config = {
 	module: {
@@ -35,20 +63,15 @@ const config = {
 	resolve: {
 		extensions: ['.js'],
 		modules: ['node_modules'],
+		alias: {
+			'TweenLite': appNodeModules + '/gsap/src/uncompressed/TweenLite.js',
+			'TweenMax': appNodeModules + '/gsap/src/uncompressed/TweenMax.js',
+			'ScrollToPlugin': appNodeModules + '/gsap/src/uncompressed/plugins/ScrollToPlugin.js',
+			'Draggable': appNodeModules + '/gsap/src/uncompressed/utils/Draggable.js'
+		},
 	},
-	plugins: IS_PRODUCTION ? [
-		new webpack.optimize.UglifyJsPlugin({
-			minimize: true,
-			beautify: false,
-			compress: true,
-			comments: false,
-			parallel: {
-				cache: true,
-				workers: 2
-			}
-		})
-	] : [],
-	devtool: IS_PRODUCTION ? false : '#eval',
+	plugins,
+	devtool: IS_PRODUCTION ? false : 'cheap-module-source-map',
 	externals: {
 		'../TweenLite': 'TweenLite',
 		'./TweenLite': 'TweenLite',

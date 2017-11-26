@@ -1,0 +1,27 @@
+.menu-popup
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background-color: $color-dark
+	z-index: 11
+	text-align: center
+	overflow: auto
+	visibility: hidden
+	opacity: 0
+	&__items
+		display: inline-block
+		padding: 60px 0
+		+vertical-align('.menu-popup')
+	&__item
+		margin-bottom: 25px
+		&:last-child
+			margin-bottom: 0
+		&-link
+			color: #fff
+			font-size:  32px
+	&__close
+		position: absolute
+		top: 30px
+		right: 35px
