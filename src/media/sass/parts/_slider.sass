@@ -1,6 +1,7 @@
 .slider
 	$photo-margin-side: 57px
-	$content-width: 570px
+	$content-width: 650px
+	$gradient-with: 60px
 	position: relative
 	text-align: center
 	&__photos
@@ -16,7 +17,7 @@
 		will-change: transform, opacity
 		border-radius: 50%
 		cursor: pointer
-		transition: opacity 0.4s $default-transition-function
+		transition: opacity 0.4s $default-transition-function, transform 0.4s $default-transition-function
 		&:hover
 			opacity: 0.6
 		&._active
@@ -24,17 +25,46 @@
 			transform: scale(1)
 	&__content
 		white-space: nowrap
+		font-size: 0
 		height: 300px
 		&-items
+			position: relative
 			margin-right: auto
 			margin-left: auto
 			width: $content-width
+			opacity: 0
+			transition: opacity $default-transition-duration $default-transition-function
+			&:before, &:after
+				content: ""
+				display: block
+				position: absolute
+				top: 0
+				width: 3000px
+				height: 100%
+				z-index: 1
+			&:before
+				left: 40px
+				transform: translateX(-100%)
+				background-image: linear-gradient(to left, transparent, white $gradient-with, white 100%)
+			&:after
+				right: 40px
+				transform: translateX(100%)
+				background-image: linear-gradient(to right, transparent, white $gradient-with, white 100%)
+			&-inner
+				display: inline-block
+				position: relative
+				font-size: $default-font-size
+				will-change: transform
+			&._inited
+				opacity: 1
 		&-item
 			display: inline-block
-			visibility: hidden
-			opacity: 0
-			width: 100%
+			width: $content-width
 			white-space: normal
+			vertical-align: top
+			transition: opacity $default-transition-duration $default-transition-function
+			padding: 0 40px
+			box-sizing: border-box
 			&._active
 				opacity: 1
 				visibility: visible

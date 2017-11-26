@@ -3,3 +3,5 @@ export const BREAKPOINTS = {
 	MD: 1000,
 	SM: 480,
 };
+
+export const ACTIVE_CLASS = '_active';

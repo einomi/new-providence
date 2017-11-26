@@ -4,6 +4,7 @@ import Header from './modules/Header'
 import MenuPopups from './modules/MenuPopups'
 import Popups  from './modules/Popups'
 import VideoPopup from './modules/VideoPopup'
+import Slider from './modules/Slider'
 import './utils/jqExtensions'
 
 const App = global.App = new (function App() {
@@ -16,6 +17,7 @@ const App = global.App = new (function App() {
 	    MenuPopups,
 	    Popups,
 	    VideoPopup,
+	    Slider,
     };
 
     $(() => {
