@@ -1,6 +1,6 @@
-// Callback is equal to Signal
+// Signal is equal to Signal
 
-function Callback() {
+function Signal() {
     this._handlers = [];
 
     var self = this;
@@ -9,9 +9,9 @@ function Callback() {
     };
 }
 
-Callback.prototype = {
+Signal.prototype = {
     _throwError: function () {
-        throw new TypeError('Callback handler must be function!');
+        throw new TypeError('Signal handler must be function!');
     },
 
     add: function (handler, context) {
@@ -61,4 +61,4 @@ Callback.prototype = {
     },
 };
 
-module.exports = Callback;
+module.exports = Signal;

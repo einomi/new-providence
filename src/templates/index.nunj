@@ -12,4 +12,10 @@
 	{% include './parts/_footer.nunj' %}
 	{{ menuPopup(menuComplementaryId, menuComplementaryItems) }}
 	{{ menuPopup(menuMobileId, menuMobileItems) }}
+	<div class="popup-portal" data-popup-portal>
+		<div class="popup-portal__inner">
+			{% include './parts/_popup-video.nunj' %}
+		</div>
+		<div class="popup-portal__close close" data-popup-closer></div>
+	</div>
 {% endblock content %}

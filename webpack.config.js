@@ -71,7 +71,7 @@ const config = {
 		},
 	},
 	plugins,
-	devtool: IS_PRODUCTION ? false : 'cheap-module-source-map',
+	devtool: IS_PRODUCTION ? false : '#eval',
 	externals: {
 		'../TweenLite': 'TweenLite',
 		'./TweenLite': 'TweenLite',

@@ -1,20 +1,18 @@
-import dom from '../utils/DOM'
 import ResponsiveHelper from '../helpers/ResponsiveHelper'
 import globalData from '../../../../global-data.json'
+import PopupsBase from './PopupsBase';
 
 const MENU_DESKTOP_ID = globalData.menuComplementaryId;
 const MENU_MOBILE_ID = globalData.menuMobileId;
 
-class MenuPopups {
-	constructor() {
-		this.$menus = $('[data-menu-popup]');
+class MenuPopups extends PopupsBase {
+	constructor(args) {
+		super(args);
+
+		this.$popups = $('[data-menu-popup]');
 		this.$openers = $('[data-menu-popup-opener]');
 		this.$closers = $('[data-menu-popup-closer]');
 		this.$burger = $('[data-burger]');
-
-		dom.$window.on('resize orientationchange', () => {
-		    this.closeAll(true);
-		});
 
 		this.$burger.on('click', e => {
 		    e.preventDefault();
@@ -35,23 +33,8 @@ class MenuPopups {
 		});
 	}
 
-	open(id) {
-		if (this._opened) {
-		    return;
-		}
-		this._opened = true;
-
-		const $menu = this.$menus.filter(`[data-menu-popup="${id}"]`);
-		TweenMax.to($menu, 0.35, {autoAlpha: 1});
-	}
-
-	closeAll(immediate) {
-		if (!this._opened) {
-			return;
-		}
-		this._opened = false;
-
-		TweenMax.to(this.$menus, immediate ? 0 : 0.35, {autoAlpha: 0});
+	_getPopupElement(id) {
+		return this.$popups.filter(`[data-menu-popup="${id}"]`);
 	}
 }
 
