@@ -7,20 +7,20 @@
 	<div class="slider__content">
 		<div class="slider__content-items">
 			<div class="slider__content-item slider-item _active">
-				<h3 class="slider-item__title">New Providence ist the great UI kit</h3>
-				<p class="slider-item__text text">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
+				<h3 class="slider-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+				<p class="slider-item__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto blanditiis, corporis deserunt dolore dolores eum fuga impedit laudantium, nulla odio praesentium quo, rerum sequi sint temporibus velit! Ab atque earum iusto libero maiores perferendis porro quis saepe unde? Commodi illum in modi nesciunt nisi odit tempore vitae. Iusto, magni.</p>
 				{{ rating('slider-item__rating', 4) }}
 				<div class="slider-item__author title-tiny">Cameron Dowman</div>
 			</div>
 			<div class="slider__content-item slider-item">
-				<h3 class="slider-item__title">New Providence ist the great UI kit</h3>
-				<p class="slider-item__text text">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
+				<h3 class="slider-item__title">New Providence is&nbsp;the great&nbsp;UI kit</h3>
+				<p class="slider-item__text text">“Just then her head struck against the roof of&nbsp;the hall: in&nbsp;fact she was now more than nine feet high, and she at&nbsp;once took up&nbsp;the little golden key and hurried off to&nbsp;the garden door.”</p>
 				{{ rating('slider-item__rating', 5) }}
 				<div class="slider-item__author title-tiny">Cameron Dowman</div>
 			</div>
 			<div class="slider__content-item slider-item">
-				<h3 class="slider-item__title">New Providence ist the great UI kit</h3>
-				<p class="slider-item__text text">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</p>
+				<h3 class="slider-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+				<p class="slider-item__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corporis, dolorum error fugit nam natus nesciunt nostrum officia quae quidem quis, quisquam repudiandae sapiente sunt tempore totam ut vitae voluptate.</p>
 				{{ rating('slider-item__rating', 2) }}
 				<div class="slider-item__author title-tiny">Cameron Dowman</div>
 			</div>

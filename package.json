@@ -1,7 +1,7 @@
 {
-  "name": "New Providence Demo",
+  "name": "new-providence",
   "version": "1.0.0",
-  "description": "Makrup example",
+  "description": "Demo project showing my front-end skills",
   "scripts": {
     "start": "gulp",
     "build": "cross-env NODE_ENV=production gulp build",

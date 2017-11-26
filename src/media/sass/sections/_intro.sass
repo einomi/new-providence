@@ -59,6 +59,7 @@
 		&__text
 			+responsive-property(font-size, 20px)
 			+responsive-property(margin-bottom, 55px)
+			line-height: 1.45
 		&__button
 			+responsive-property(margin-bottom, 109px)
 			height: 50px
@@ -76,6 +77,9 @@
 			margin-right: auto
 			margin-left: auto
 			+responsive-property(width, 277px)
+	+max-screen(560px)
+		&__title
+			+responsive-property(font-size, 52px)
 	+max-screen($breakpoint-sm)
 		&__title
 			+responsive-property(font-size, 58px)
