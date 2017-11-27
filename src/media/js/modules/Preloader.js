@@ -34,6 +34,7 @@ class Preloader {
 		dom.$body.unlock();
 		TweenMax.to(this.$container, 0.35, { autoAlpha: 0, onComplete: () => {
 			Animations.start();
+			this.$container.remove();
 		}});
 	}
 }
