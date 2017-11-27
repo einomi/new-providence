@@ -55,3 +55,11 @@ $.fn.delayedFocusOnEnd = function (delay) {
 
     return this;
 };
+
+$.fn.lock = function () {
+	this.css('overflow', 'hidden');
+};
+
+$.fn.unlock = function () {
+	this.css('overflow', 'visible');
+};

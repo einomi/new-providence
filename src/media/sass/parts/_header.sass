@@ -31,8 +31,6 @@
 		top: 18px
 		left: 50%
 		transform: translateX(-50%)
-	+max-screen($breakpoint-lg)
-		padding: 42px 0
 	&._fixed
 		position: fixed
 		top: 0
@@ -41,3 +39,8 @@
 		background-color: #fff
 		box-shadow: 0 3px 12px rgba($color-dark, 0.2)
 		padding: 20px 0
+	+max-screen($breakpoint-lg)
+		padding: 42px 0
+	+max-screen($breakpoint-md)
+		&__logo
+			top: 5px

@@ -55,6 +55,12 @@ const config = {
 				loader: 'json-loader',
 			}
 		],
+		rules: [
+			{
+				test: require.resolve('scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'),
+				loader: 'imports-loader?define=>false'
+			}
+		]
 	},
 	watch: !IS_PRODUCTION,
 	watchOptions: {
@@ -67,7 +73,9 @@ const config = {
 			'TweenLite': appNodeModules + '/gsap/src/uncompressed/TweenLite.js',
 			'TweenMax': appNodeModules + '/gsap/src/uncompressed/TweenMax.js',
 			'ScrollToPlugin': appNodeModules + '/gsap/src/uncompressed/plugins/ScrollToPlugin.js',
-			'Draggable': appNodeModules + '/gsap/src/uncompressed/utils/Draggable.js'
+			'Draggable': appNodeModules + '/gsap/src/uncompressed/utils/Draggable.js',
+			// 'ScrollMagic': appNodeModules + 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
+			'debug.addIndicators': appNodeModules + '/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
 		},
 	},
 	plugins,

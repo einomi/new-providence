@@ -4,6 +4,7 @@
 	min-height: 550px
 	background: #f3f3f5 url("../img/intro-bg.jpg")
 	background-size: cover
+	overflow: hidden
 	&__container
 		height: 100%
 	&__content
@@ -26,10 +27,11 @@
 		position: absolute
 		bottom: 0
 		left: 50%
-		transform: translateX(-50%)
+		transform: translate(-50%, 100%)
 		background-image: url("../img/phone.png")
 		width: 35vh
 		background-size: cover
+		will-change: transform
 		+retina
 			background-image: url("../img/phone@2x.png")
 		&:after

@@ -3,6 +3,8 @@
 {% from "./parts/_menu-popup.nunj" import menuPopup %}
 
 {% block content %}
+	{% include './parts/_preloader.nunj' %}
+
 	{% include './parts/_header.nunj' %}
 	{% include './sections/_intro.nunj' %}
 	{% include './sections/_features.nunj' %}

@@ -27,6 +27,8 @@ $multiplier-sm: 316px / $screen-height
 		height: $screen-height
 		background-size: cover
 		box-shadow: 10px 32px 66px rgba(#5c5f65, 0.28)
+		will-change: transform
+		opacity: 0
 		&:before
 			content: ""
 			display: block
@@ -62,6 +64,8 @@ $multiplier-sm: 316px / $screen-height
 		background-size: cover
 		background-image: url("../img/screens/main.png")
 		z-index: 1
+		opacity: 0
+		will-change: transform
 		+retina
 			background-image: url("../img/screens/main@2x.png")
 	+max-screen($breakpoint-lg)
