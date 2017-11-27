@@ -13,6 +13,10 @@ class PopupsBase {
 		});
 	}
 
+	isOpened() {
+		return this._opened;
+	}
+
 	open(id) {
 		if (this._opened) {
 			return;

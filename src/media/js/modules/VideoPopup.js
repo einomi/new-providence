@@ -1,4 +1,5 @@
 import YoutubeAPILoader from '../helpers/YoutubeAPILoader'
+import Popups from './Popups'
 
 class VideoPopup {
 	constructor() {
@@ -12,6 +13,12 @@ class VideoPopup {
 
 		this.$popup.on('close', () => {
 			this._player.stopVideo();
+		});
+
+		this.$player.outerClick(() => {
+			if (Popups.isOpened()) {
+				Popups.closeAll();
+			}
 		});
 
 		YoutubeAPILoader.onLoad(() => this._createPlayer());

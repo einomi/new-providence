@@ -1,4 +1,6 @@
 <div class="popup-video popup" data-popup="video">
 	<div class="popup-video__title">Premium Brand</div>
-	<div id="player" class="popup-video__player" data-video="oIjgOShXKFg"></div>
+	<div class="popup-video__player">
+        <div id="player" class="popup-video__player-inner" data-video="oIjgOShXKFg"></div>
+	</div>
 </div>
