@@ -5,6 +5,8 @@
             <div class="section-intro__text text">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.</div>
             <button class="section-intro__button button _transparent _icon _icon-play" role="button" data-popup-opener="video">Watch Video</button>
         </div>
-        <div class="section-intro__phone"></div>
+		<div class="section-intro__phone-wrapper">
+			<div class="section-intro__phone"></div>
+		</div>
 	</div>
 </section>

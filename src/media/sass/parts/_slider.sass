@@ -42,7 +42,7 @@
 				top: 0
 				width: 2000px
 				height: 100%
-				z-index: 10
+				z-index: 1
 			&:before
 				left: 40px
 				transform: translateX(-100%)
@@ -131,6 +131,9 @@
 				padding: 0 10px
 		&__controls
 			display: none
+	+max-screen(359px)
+		&__content
+			height: 360px
 
 .slider-item
 	&__title

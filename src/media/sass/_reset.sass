@@ -8,6 +8,15 @@ html, body
 	cursor: default
 	//-webkit-text-size-adjust: 100%
 	//-webkit-font-smoothing: antialiased
+	
+html
+	+min-screen($breakpoint-md)
+		&._win._chrome
+			body
+				margin-right: calc(100vw - 100%)
+				margin-left: 0
+				width: 100vw
+				overflow-x: hidden !important
 
 body
 	font: normal $default-font-size Roboto, Arial, sans-serif
@@ -15,6 +24,7 @@ body
 	overflow: hidden
 	+mobile
 		-webkit-text-size-adjust: 100%
+	
 
 img, fieldset
 	border: 0
@@ -68,22 +78,22 @@ input[type=search]
 	color: #FFFFFF
 	text-shadow: none
 
-// ::-webkit-scrollbar
-// 	width: 6px
-// 	height: 6px
-// 	background: #eaedf1
+ ::-webkit-scrollbar
+ 	width: 6px
+ 	height: 6px
+ 	background: #eaedf1
 
-// ::-webkit-scrollbar-button
-// 	display: none
+ ::-webkit-scrollbar-button
+ 	display: none
 
-// ::-webkit-scrollbar-track
-// 	background: #eaedf1
+ ::-webkit-scrollbar-track
+ 	background: #eaedf1
 
-// ::-webkit-scrollbar-thumb
-// 	background: #5f5f5f
+ ::-webkit-scrollbar-thumb
+ 	background: #555
 
-// ::-webkit-scrollbar-thumb:hover
-// 	background: #333333
+ ::-webkit-scrollbar-thumb:hover
+ 	background: #333333
 
 #__bs_notify__
 	padding: 2px !important

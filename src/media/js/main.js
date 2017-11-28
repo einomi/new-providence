@@ -1,4 +1,5 @@
 import './utils/jqExtensions'
+import './utils/ENV'
 import dom from './utils/DOM'
 import Preloader from './modules/Preloader'
 import Animations from './modules/Animations'

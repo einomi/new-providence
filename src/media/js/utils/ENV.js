@@ -10,6 +10,7 @@ var env = {
     isDesktop:          !(!!mobileDetectInstance.mobile()),
     isMac:              navigator.platform.indexOf('Mac') > -1,
     isWin:              navigator.platform.indexOf('Win') > -1,
+	isChrome:           navigator.userAgent.indexOf('Chrome') > -1,
     width:              window.innerWidth,
     height:             window.innerHeight,
     detector:           mobileDetectInstance,
@@ -21,6 +22,7 @@ var htmlClasses = [
     env.isWin ? '_win' : '_mac',
 ];
 env.isRetina && htmlClasses.push('_retina');
+env.isChrome && htmlClasses.push('_chrome');
 
 dom.$html.addClass(htmlClasses.join(' '));
 

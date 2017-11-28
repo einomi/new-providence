@@ -1,10 +1,8 @@
 import throttle from 'lodash/throttle'
 
 import dom from '../utils/DOM'
-import { BREAKPOINTS } from '../utils/constants'
+import { FIXED_CLASS, BREAKPOINTS } from '../utils/constants'
 import { getScrollTop } from '../utils/';
-
-const FIXED_CLASS = '_fixed';
 
 class Header {
 	constructor() {
@@ -18,6 +16,7 @@ class Header {
 		this._throttledScrollHandler = throttle(this._scrollHandler.bind(this), 60);
 
 		dom.$window.on('resize orientationchange', () => {
+			this.$element.removeClass(FIXED_CLASS);
 			this._update();
 		});
 		this._update();

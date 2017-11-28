@@ -6,7 +6,7 @@
             <button class="site-header__burger burger" area-label="Menu button" data-burger></button>
             {{ menu('site-header__menu hidden-sm', menuItems1) }}
         </div>
-        <div class="site-header__logo logo" data-role="brand" aria-label="New Providence Logo"></div>
+        <img class="site-header__logo logo" data-role="brand" alt="New Providence Logo" src="/media/img/logo.svg">
         <div class="site-header__complementary-area hidden-sm">
 			{{ menu('site-header__menu _complementary', menuItems2)}}
             <button class="button _icon _icon-apple" role="button"><span class="button__text">Get App</span></button>

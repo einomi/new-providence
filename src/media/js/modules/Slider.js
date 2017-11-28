@@ -48,8 +48,9 @@ class Slider {
 			dots: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			speed: 750,
 			autoplay: true,
-			autoplaySpeed: 3500,
+			autoplaySpeed: 5000,
 		});
 
 	}

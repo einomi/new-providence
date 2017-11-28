@@ -52,7 +52,7 @@
     "scrollmagic": "^2.0.5",
     "slick-carousel": "^1.8.1",
     "vinyl-named": "^1.1.0",
-    "webpack": "^3.7.1",
+    "webpack": "^3.8.1",
     "webpack-stream": "^4.0.0",
     "yargs": "^3.32.0"
   }

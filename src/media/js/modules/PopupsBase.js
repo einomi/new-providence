@@ -23,6 +23,8 @@ class PopupsBase {
 		}
 		this._opened = true;
 
+		console.log('OPEN');
+		dom.$body.lock();
 		const $popup = this._getPopupElement(id);
 		$popup.trigger('open');
 		this._animateOpen($popup);
@@ -34,6 +36,7 @@ class PopupsBase {
 		}
 		this._opened = false;
 
+		dom.$body.unlock();
 		this.$popups.trigger('close');
 		this._animateClose(immediate);
 	}

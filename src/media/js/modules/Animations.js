@@ -21,8 +21,6 @@ class Animations {
 		const $content = $('.section-intro__content');
 		const $phone = $section.find('.section-intro__phone');
 		new ScrollMagic.Scene({
-			triggerHook: ResponsiveHelper.isDesktop() ? 0.5 : 0,
-			offset: ResponsiveHelper.isDesktop() ? 0 : 50,
 			triggerElement: $section[0],
 			reverse: false,
 		})
@@ -39,7 +37,7 @@ class Animations {
 		const $section = $('.section-description');
 		const $phone = $section.find('.section-description__image');
 		new ScrollMagic.Scene({
-			triggerHook: ResponsiveHelper.isDesktop() ? 0.35 : 0,
+			triggerHook: ResponsiveHelper.isDesktop() ? 0.5 : 0,
 			offset: ResponsiveHelper.isDesktop() ? 0 : 100,
 			triggerElement: $section[0],
 			reverse: false,

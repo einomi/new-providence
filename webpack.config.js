@@ -54,12 +54,6 @@ const config = {
 				test: /\.json$/,
 				loader: 'json-loader',
 			}
-		],
-		rules: [
-			{
-				test: require.resolve('scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'),
-				loader: 'imports-loader?define=>false'
-			}
 		]
 	},
 	watch: !IS_PRODUCTION,

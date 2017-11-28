@@ -6,26 +6,24 @@
 	</div>
 	<div class="slider__content">
 		<div class="slider__content-items" data-slider-items>
-			{#<div class="slider__content-items-inner">#}
-				<div class="slider__content-item slider-item">
-					<h3 class="slider-item__title">Lorem ipsum dolor sit amet</h3>
-					<p class="slider-item__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto blanditiis, corporis deserunt dolore dolores eum fuga impedit laudantium, nulla odio praesentium quo, rerum sequi sint temporibus velit!</p>
-					{{ rating('slider-item__rating', 4) }}
-					<div class="slider-item__author title-tiny">Cameron Dowman</div>
-				</div>
-				<div class="slider__content-item slider-item">
-					<h3 class="slider-item__title">New Providence is&nbsp;the great&nbsp;UI kit</h3>
-					<p class="slider-item__text text">“Just then her head struck against the roof of&nbsp;the hall: in&nbsp;fact she was now more than nine feet high, and she at&nbsp;once took up&nbsp;the little golden key and hurried off to&nbsp;the garden door.”</p>
-					{{ rating('slider-item__rating', 5) }}
-					<div class="slider-item__author title-tiny">Cameron Dowman</div>
-				</div>
-				<div class="slider__content-item slider-item">
-					<h3 class="slider-item__title">Lorem ipsum dolor sit amet</h3>
-					<p class="slider-item__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corporis, dolorum error fugit nam natus nesciunt nostrum officia quae quidem quis, quisquam repudiandae sapiente sunt tempore totam ut vitae voluptate.</p>
-					{{ rating('slider-item__rating', 2) }}
-					<div class="slider-item__author title-tiny">Cameron Dowman</div>
-				</div>
-			{#</div>#}
+            <div class="slider__content-item slider-item">
+                <h3 class="slider-item__title">On the other hand, we denounce</h3>
+                <p class="slider-item__text text">“But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings.”</p>
+                {{ rating('slider-item__rating', 4) }}
+                <div class="slider-item__author title-tiny">David Copperfield</div>
+            </div>
+            <div class="slider__content-item slider-item">
+                <h3 class="slider-item__title">New Providence is&nbsp;the great&nbsp;UI kit</h3>
+                <p class="slider-item__text text">“Just then her head struck against the roof of&nbsp;the hall: in&nbsp;fact she was now more than nine feet high, and she at&nbsp;once took up&nbsp;the little golden key and hurried off to&nbsp;the garden door.”</p>
+                {{ rating('slider-item__rating', 5) }}
+                <div class="slider-item__author title-tiny">Cameron Dowman</div>
+            </div>
+            <div class="slider__content-item slider-item">
+                <h3 class="slider-item__title">Nor again is there anyone who loves or pursues</h3>
+                <p class="slider-item__text text">“But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?”</p>
+                {{ rating('slider-item__rating', 2) }}
+                <div class="slider-item__author title-tiny">Chuck Norris</div>
+            </div>
 		</div>
 	</div>
 	<div class="slider__controls">

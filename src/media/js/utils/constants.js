@@ -5,3 +5,4 @@ export const BREAKPOINTS = {
 };
 
 export const ACTIVE_CLASS = '_active';
+export const FIXED_CLASS = '_fixed';

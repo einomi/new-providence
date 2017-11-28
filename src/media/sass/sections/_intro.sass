@@ -25,11 +25,16 @@
 		margin-left: auto
 		margin-bottom: 4vh
 		font-size: vw($text-font-size)
-	&__phone
+	&__phone-wrapper
 		position: absolute
+		left: 0
 		bottom: 0
-		left: 50%
-		transform: translate(-50%, 100%)
+		width: 100%
+		text-align: center
+		font-size: 0
+	&__phone
+		display: inline-block
+		transform: translateY(100%)
 		background-image: url("../img/phone.png")
 		width: 35vh
 		background-size: cover
@@ -76,9 +81,9 @@
 				border-left-width: 14px
 				border-top-width: 7.5px
 				border-bottom-width: 7.5px
-		&__phone
+		&__phone-wrapper
 			position: static
-			transform: none
+		&__phone
 			margin-right: auto
 			margin-left: auto
 			+responsive-property(width, 277px)
