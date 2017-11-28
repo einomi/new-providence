@@ -36,6 +36,19 @@ class MenuPopups extends PopupsBase {
 	_getPopupElement(id) {
 		return this.$popups.filter(`[data-menu-popup="${id}"]`);
 	}
+
+	_animateOpen($popup) {
+		console.log('ANIMATE');
+		super._animateOpen($popup);
+		TweenMax.fromTo($popup.find('.close'), 0.55, {alpha: 0}, {alpha: 1, delay: 0.35});
+		TweenMax.staggerFromTo(
+			$popup.find('.menu-popup__items').children(),
+			0.7,
+			{y: 5, alpha: 0},
+			{y: 0, alpha: 1, delay: 0.15},
+			0.1
+		);
+	}
 }
 
 export default new MenuPopups()

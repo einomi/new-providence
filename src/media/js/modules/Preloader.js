@@ -6,13 +6,16 @@ import Animations from './Animations'
 class Preloader {
 	constructor() {
 		this.$container = $('[data-preloader]');
-		this.$progress = this.$container.find('[data-preloader-progress]');
-		this.$progressValue = this.$container.find('[data-preloader-progress-value]');
+		this.$logo = this.$container.find('.preloader__logo');
+		this.$progress = this.$container.find('.preloader__progress');
+		this.$progressValue = this.$container.find('.preloader__progress-value');
 		this._preloaderWidth = this.$progress.width();
 
 		this.minDuration = 1500;
 
 		const time1 = new Date().getTime();
+
+		TweenMax.fromTo(this.$logo, 0.75, {y: 5}, {y: 0, opacity: 1, delay: 0.2});
 
 		const onComplete = () => {
 			TweenMax.to(this.$progressValue, 15, { width: this._preloaderWidth });

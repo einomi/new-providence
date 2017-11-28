@@ -1,7 +1,8 @@
 .slider
 	$photo-margin-side: 57px
 	$content-width: 650px
-	$gradient-with: 60px
+	$gradient-width: 60px
+	$gradient-width-sm: 30px
 	position: relative
 	text-align: center
 	&__photos
@@ -45,11 +46,11 @@
 			&:before
 				left: 40px
 				transform: translateX(-100%)
-				background-image: linear-gradient(to left, transparent, white $gradient-with, white 100%)
+				background-image: linear-gradient(to left, rgba(white, 0), white $gradient-width, white 100%)
 			&:after
 				right: 40px
 				transform: translateX(100%)
-				background-image: linear-gradient(to right, transparent, white $gradient-with, white 100%)
+				background-image: linear-gradient(to right, rgba(white, 0), white $gradient-width, white 100%)
 			&-inner
 				display: inline-block
 				position: relative
@@ -119,10 +120,13 @@
 			margin-right: 0
 		&__content
 			&-items
-				overflow: hidden
 				width: 100%
-				&:before, &:after
-					display: none
+				&:before
+					background-image: linear-gradient(to left, rgba(white, 0), white $gradient-width-sm, white 100%)
+					left: 20px
+				&:after
+					background-image: linear-gradient(to right, rgba(white, 0), white $gradient-width-sm, white 100%)
+					right: 20px
 			&-item
 				padding: 0 10px
 		&__controls

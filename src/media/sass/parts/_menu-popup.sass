@@ -10,12 +10,14 @@
 	overflow: auto
 	visibility: hidden
 	opacity: 0
+	will-change: opacity
 	&__items
 		display: inline-block
 		padding: 60px 0
 		+vertical-align('.menu-popup')
 	&__item
 		margin-bottom: 25px
+		will-change: transform
 		&:last-child
 			margin-bottom: 0
 		&-link

@@ -18,9 +18,10 @@ class Animations {
 
 	_createIntroScene() {
 		const $section = $('.section-intro');
+		const $content = $('.section-intro__content');
 		const $phone = $section.find('.section-intro__phone');
 		new ScrollMagic.Scene({
-			triggerHook: 0,
+			triggerHook: ResponsiveHelper.isDesktop() ? 0.5 : 0,
 			offset: ResponsiveHelper.isDesktop() ? 0 : 50,
 			triggerElement: $section[0],
 			reverse: false,
@@ -28,7 +29,9 @@ class Animations {
             // .addIndicators()
 			.addTo(this._controller)
 			.on('start', () => {
-                TweenMax.fromTo($phone, 0.35, { y: '100%', autoAlpha: 1 }, { y: '0%' });
+				TweenMax.fromTo($content, 1, { alpha: 0, y: 15 }, { alpha: 1, y: 0 });
+				TweenMax.fromTo($phone, 0.3, { alpha: 0 }, { alpha: 1, delay: 0.15 });
+                TweenMax.fromTo($phone, 1, { y: '100%' }, { y: '0%', delay: 0.15 });
 			});
 	}
 
@@ -36,7 +39,7 @@ class Animations {
 		const $section = $('.section-description');
 		const $phone = $section.find('.section-description__image');
 		new ScrollMagic.Scene({
-			triggerHook: ResponsiveHelper.isDesktop() ? 0.15 : 0,
+			triggerHook: ResponsiveHelper.isDesktop() ? 0.35 : 0,
 			offset: ResponsiveHelper.isDesktop() ? 0 : 100,
 			triggerElement: $section[0],
 			reverse: false,
@@ -44,7 +47,12 @@ class Animations {
 			// .addIndicators()
 			.addTo(this._controller)
 			.on('start', () => {
-				TweenMax.fromTo($phone, 0.5, { x: -50, y: -50 }, { opacity: 1, x: 0, y: 0 });
+				TweenMax.fromTo(
+					$phone,
+					1,
+					{ x: -70, y: -50, opacity: 0 },
+					{ opacity: 1, x: 0, y: 0, ease: Power1.easeInOut }
+				);
 			});
 	}
 
@@ -57,11 +65,11 @@ class Animations {
 			triggerElement: $section[0],
 			reverse: false,
 		})
-			.addIndicators()
+			// .addIndicators()
 			.addTo(this._controller)
 			.on('start', () => {
-				TweenMax.fromTo($mainItem, 0.5, { y: 50 }, { y: 0, alpha: 1, delay: 0.3 });
-				TweenMax.staggerFromTo($items, 0.5, { y: random(50, 100) }, { opacity: 1, y: 0 }, random(0.1, 0.3));
+				TweenMax.fromTo($mainItem, 1, { y: 50, alpha: 0 }, { y: 0, alpha: 1, delay: 0.3 });
+				TweenMax.staggerFromTo($items, 1, { y: random(50, 100), alpha: 0 }, { alpha: 1, y: 0 }, random(0.1, 0.3));
 			});
 	}
 }
