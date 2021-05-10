@@ -41,7 +41,7 @@
     "imports-loader": "^0.7.1",
     "jquery": "^3.2.1",
     "json-loader": "^0.5.7",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "node-notifier": "^5.1.2",
     "postcss-assets": "^3.0.3",
     "postcss-sprites": "^2.0.3",
